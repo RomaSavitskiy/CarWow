@@ -1,0 +1,10 @@
+.user_container {
+    height: 140px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.user_container_p {
+    height: 10px;
+}

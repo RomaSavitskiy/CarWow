@@ -1,17 +1,17 @@
-package com.mycompany;
+package com.mycompany.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DatabaseConnection {
+public class DatabaseConnector {
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/CarWow";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "12345678";
 
     private static Connection connection;
 
-    private DatabaseConnection() {
+    private DatabaseConnector() {
         // Private constructor to prevent instantiation
     }
 
@@ -29,6 +29,7 @@ public class DatabaseConnection {
                 e.printStackTrace();
             }
         }
+
         return connection;
     }
 }
